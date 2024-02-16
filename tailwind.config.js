@@ -20,7 +20,6 @@ export default {
         gray200: "#667085",
         gray300: "#F9FAFB",
         gray400: "#57585B",
-        paragraph100: "#57585B",
         heading100: "#1B1C1E",
         blue100: "#023E8A",
         blue200: "#0E294B",

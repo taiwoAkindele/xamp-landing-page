@@ -28,7 +28,7 @@ const Listings = () => {
                 <h5 className="font-semibold text-[18px] md:text-[20px] leading:[21px] md:leading-[23px] text-black100">
                   {list.location}
                 </h5>
-                <p className="font-normal text-[14px] md:text-[16px] leading-[24px] text-paragraph100">
+                <p className="font-normal text-[14px] md:text-[16px] leading-[24px] text-gray400">
                   {list.number}
                 </p>
               </div>
