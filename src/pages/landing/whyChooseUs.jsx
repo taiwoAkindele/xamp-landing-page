@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
             <h5 className="text-[18px] md:text-[20px] leading-[30px] text-heading100 font-semibold">
               {reason.title}
             </h5>
-            <p className="text-[14px] md:text-[16px] leading-[20px] font-normal text-paragraph100">
+            <p className="text-[14px] md:text-[16px] leading-[20px] font-normal text-gray400">
               {reason.content}
             </p>
           </div>
