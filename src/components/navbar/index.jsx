@@ -13,16 +13,19 @@ const propertySublink = [
     icon: <SellIcon />,
     title: "Sell",
     subtext: "News and writings, press releases, and resources.",
+    href: "/sell",
   },
   {
     icon: <RentIcon />,
     title: "Rent",
     subtext: "All the boring stuff that we Dan from legal made us add.",
+    href: "/rent",
   },
   {
     icon: <RentIcon />,
     title: "Lease",
     subtext: "All the boring stuff that we Dan from legal made us add.",
+    href: "/lease",
   },
 ];
 
@@ -66,7 +69,10 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <nav className="bg-[#fff] pr-[12px] pl-[16px] md:px-[23px] py-[10px] md:py-[20px] flex items-center md:gap-[300px] md:justify-normal justify-between">
-        <XAMPLogo className="w-[105px] h-[32px] md:w-[auto] md:h-[auto]" />
+        <XAMPLogo
+          onClick={() => navigate("/")}
+          className="w-[105px] h-[32px] md:w-[auto] md:h-[auto] cursor-pointer"
+        />
         <ul className="hidden md:flex items-center gap-[32px]">
           {navItems?.map((nav, i) => (
             <React.Fragment key={i}>
@@ -87,17 +93,18 @@ const Navbar = () => {
                       <div
                         key={i}
                         className="w-[288px] p-[12px] flex items-start gap-[16px]"
-                        onClick={() => console.log("clicked", item.title)}
                       >
-                        {item.icon}
-                        <div className="flex flex-col gap-[12px]">
-                          <h6 className="text-[16px] font-medium leading-[24px] text-black100">
-                            {item.title}
-                          </h6>
-                          <p className="font-normal text-[14px] leading-[20px] text-gray400">
-                            {item.subtext}
-                          </p>
-                        </div>
+                        <Link to={item.href}>
+                          {item.icon}
+                          <div className="flex flex-col gap-[12px]">
+                            <h6 className="text-[16px] font-medium leading-[24px] text-black100">
+                              {item.title}
+                            </h6>
+                            <p className="font-normal text-[14px] leading-[20px] text-gray400">
+                              {item.subtext}
+                            </p>
+                          </div>
+                        </Link>
                       </div>
                     ))}
                   </div>
@@ -133,12 +140,14 @@ const Navbar = () => {
                 isShowProperties &&
                 nav.sublink?.map((item, i) => (
                   <div key={i} className="flex flex-col gap-[12px]">
-                    <h6 className="text-[16px] font-medium leading-[24px] text-black100">
-                      {item.title}
-                    </h6>
-                    <p className="font-normal text-[14px] leading-[20px] text-gray400">
-                      {item.subtext}
-                    </p>
+                    <Link to={item.href}>
+                      <h6 className="text-[16px] font-medium leading-[24px] text-black100">
+                        {item.title}
+                      </h6>
+                      <p className="font-normal text-[14px] leading-[20px] text-gray400">
+                        {item.subtext}
+                      </p>
+                    </Link>
                   </div>
                 ))}
             </React.Fragment>
