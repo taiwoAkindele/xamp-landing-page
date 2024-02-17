@@ -8,6 +8,8 @@ export default {
         "bannerMob": "url(/src/assets/images/banner-mobile.svg)",
         "how-it-works": "url(/src/assets/images/home-image.svg)",
         "how-it-works-mobile": "url(/src/assets/images/home-image-mobile.svg)",
+        "sell-bg": "url(/src/assets/images/sell-hero.svg)",
+        "sell-hero-mobile": "url(/src/assets/images/sell-hero-mobile.svg)",
       },
       height: {
         "hero-height": "calc(100vh - 90px)",

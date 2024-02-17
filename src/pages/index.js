@@ -1,5 +1,6 @@
 import React from "react";
 const LandingPage = React.lazy(() => import("./landing"));
-const HowItWorks = React.lazy(() => import("./how-it-works"));
+const RentPage = React.lazy(() => import("./rent"));
+const SellPage = React.lazy(() => import("./sell"));
 
-export { LandingPage, HowItWorks };
+export { LandingPage, RentPage, SellPage };

@@ -13,19 +13,19 @@ const propertySublink = [
     icon: <SellIcon />,
     title: "Sell",
     subtext: "News and writings, press releases, and resources.",
-    href: "/sell",
+    href: "/properties/sell",
   },
   {
     icon: <RentIcon />,
     title: "Rent",
     subtext: "All the boring stuff that we Dan from legal made us add.",
-    href: "/rent",
+    href: "/properties/rent",
   },
   {
     icon: <RentIcon />,
     title: "Lease",
     subtext: "All the boring stuff that we Dan from legal made us add.",
-    href: "/lease",
+    href: "/properties/lease",
   },
 ];
 

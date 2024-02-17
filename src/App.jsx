@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { HowItWorks, LandingPage } from "./pages";
+import { RentPage, LandingPage, SellPage } from "./pages";
 import { Suspense } from "react";
 
 function App() {
@@ -8,7 +8,8 @@ function App() {
       <Suspense fallback={<h1>Loading</h1>}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/rent" element={<HowItWorks />} />
+          <Route path="/properties/rent" element={<RentPage />} />
+          <Route path="/properties/sell" element={<SellPage />} />
         </Routes>
       </Suspense>
     </>
