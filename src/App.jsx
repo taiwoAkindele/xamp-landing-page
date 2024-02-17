@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { LandingPage } from "./pages";
+import { HowItWorks, LandingPage } from "./pages";
 import { Suspense } from "react";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <Suspense fallback={<h1>Loading</h1>}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
         </Routes>
       </Suspense>
     </>
