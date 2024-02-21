@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 import Hero from "./hero";
 import Card from "./card";
 import Support from "./support";
-import Discover from "./discover";
+import ReadytoSell from "./ready-to-sell";
 
 const SellPage = () => {
   return (
@@ -12,7 +12,7 @@ const SellPage = () => {
         <Hero />
         <Card />
         <Support />
-        <Discover />
+        <ReadytoSell />
       </Layout>
     </div>
   );

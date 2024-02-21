@@ -4,7 +4,6 @@ import Hero from "./hero";
 import Howitworks from "./howitworks";
 import WhyUseXamp from "./why-use";
 import Rectangle from "./rectangle";
-import Explore from "./explore";
 
 const HowItWorks = () => {
   return (
@@ -14,7 +13,6 @@ const HowItWorks = () => {
         <Howitworks />
         <WhyUseXamp />
         <Rectangle />
-        <Explore />
       </Layout>
     </div>
   );

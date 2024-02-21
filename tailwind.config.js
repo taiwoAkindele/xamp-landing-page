@@ -10,6 +10,8 @@ export default {
         "how-it-works-mobile": "url(/src/assets/images/home-image-mobile.svg)",
         "sell-bg": "url(/src/assets/images/sell-hero.svg)",
         "sell-hero-mobile": "url(/src/assets/images/sell-hero-mobile.svg)",
+        "lease-hero": "url(/src/assets/images/lease-hero.svg)",
+        "lease-hero-mobile": "url(/src/assets/images/lease-bg-mobile.svg)",
       },
       height: {
         "hero-height": "calc(100vh - 90px)",

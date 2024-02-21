@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { ReactComponent as ArrowRight } from "../../assets/icons/Icon.svg";
 import { ReactComponent as RealEstate } from "../../assets/images/real-estate.svg";
 import { ReactComponent as RealEstateMobile } from "../../assets/images/real-estate-mobile.svg";
 
@@ -11,7 +9,6 @@ const Users = () => {
       content:
         "Our platform simplifies the search for your next home. With detailed property listings, virtual tours, and secure communication channels, finding the perfect rental property has never been easier.",
       href: "",
-      className: "border-l-[4px] border-l-blue100",
     },
     {
       title: "2. Landlords",
@@ -46,10 +43,6 @@ const Users = () => {
               <p className="text-[16px] md:text-[18px] font-normal text-gray100 leading-[24px]">
                 {user.content}
               </p>
-              <Link className="flex items-center text-[16px] leading-[24px] font-medium text-blue100 gap-[8px]">
-                Learn more
-                <ArrowRight />
-              </Link>
             </div>
           ))}
         </div>

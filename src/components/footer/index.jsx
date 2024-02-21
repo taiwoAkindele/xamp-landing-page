@@ -10,24 +10,24 @@ const Footer = () => {
     {
       heading: "Properties",
       list: [
-        { title: "Buy", link: "" },
-        { title: "Rent", link: "" },
-        { title: "Lease", link: "" },
+        { title: "Buy", link: "/properties/sell" },
+        { title: "Rent", link: "/properties/rent" },
+        { title: "Lease", link: "/properties/lease" },
       ],
     },
     {
       heading: "Company",
       list: [
-        { title: "About us", link: "" },
-        { title: "Privacy", link: "" },
-        { title: "Terms", link: "" },
+        { title: "About us", link: "/about" },
+        { title: "Privacy", link: "#" },
+        { title: "Terms", link: "#" },
       ],
     },
     {
       heading: "Support",
       list: [
-        { title: "Help Center", link: "" },
-        { title: "Contact", link: "" },
+        { title: "Help Center", link: "#" },
+        { title: "Contact", link: "#" },
       ],
     },
   ];
@@ -37,7 +37,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row items-start gap-[48px] pb-[64px]">
         <div className="flex flex-col gap-[32px]">
           <XAMP />
-          <span className="w-[320px] font-normal text-[16px] leading-[24px] text-white">
+          <span className="md:w-[320px] font-normal text-[16px] leading-[24px] text-white">
             Design amazing digital experiences that create more happy in the
             world.
           </span>
@@ -46,7 +46,7 @@ const Footer = () => {
           {footerItems?.map((item) => (
             <div
               key={item.heading}
-              className="flex flex-col gap-[16px] w-[256px]"
+              className="flex flex-col gap-[16px] md:w-[256px]"
             >
               <h5 className="font-normal text-[14px] leading-[20px] text-white">
                 {item.heading}
@@ -57,7 +57,7 @@ const Footer = () => {
                     key={list.title}
                     className="font-medium text-[16px] leading-[24px] text-white"
                   >
-                    <Link>{list.title}</Link>
+                    <Link to={list.link}>{list.title}</Link>
                   </li>
                 ))}
               </ul>

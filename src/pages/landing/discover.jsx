@@ -32,7 +32,7 @@ const Discover = () => {
   ];
 
   return (
-    <div className="md:py-[96px] py-[64px] px-[16px] md:px-[80px] flex flex-col gap-[32px] md:gap-[64px]">
+    <div className="md:py-[96px] py-[64px] px-[16px] md:px-[80px] flex flex-col gap-[32px] md:gap-[64px] overflow-x-auto scrollbar-hide">
       <div className="flex items-start justify-between">
         <div className="flex flex-col gap-[16px] md:gap-[20px]">
           <h3 className="font-medium text-[24px] md:text-[40px] leading-[28px] md:leading-[44px] text-black100">
@@ -47,7 +47,7 @@ const Discover = () => {
           <CircularArrowRight width={56} height={56} />
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-x-[24px] md:w-full w-[1280px] overflow-x-auto scrollbar-hide">
+      <div className="grid grid-cols-4 gap-x-[24px] md:w-full w-[1280px]">
         {reviews?.map((review, i) => (
           <div
             key={i}
