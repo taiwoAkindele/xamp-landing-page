@@ -5,5 +5,14 @@ const SellPage = React.lazy(() => import("./sell"));
 const LeasePage = React.lazy(() => import("./lease"));
 const AboutUsPage = React.lazy(() => import("./about"));
 const FAQPage = React.lazy(() => import("./faq"));
+const ContactPage = React.lazy(() => import("./contact"));
 
-export { LandingPage, RentPage, SellPage, LeasePage, AboutUsPage, FAQPage };
+export {
+  LandingPage,
+  RentPage,
+  SellPage,
+  LeasePage,
+  AboutUsPage,
+  FAQPage,
+  ContactPage,
+};
