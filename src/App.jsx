@@ -9,10 +9,11 @@ import {
   ContactPage,
 } from "./pages";
 import { Suspense } from "react";
+import { Loader } from "./components";
 
 function App() {
   return (
-    <Suspense fallback={<h1>Loading</h1>}>
+    <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/properties/rent" element={<RentPage />} />
