@@ -19,7 +19,7 @@ const Footer = () => {
       heading: "Company",
       list: [
         { title: "About us", link: "/about" },
-        { title: "Privacy", link: "#" },
+        { title: "Privacy", link: "/privacy" },
         { title: "Terms", link: "#" },
       ],
     },

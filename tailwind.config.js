@@ -20,6 +20,7 @@ export default {
       colors: {
         black100: "#0A0700",
         black200: "#4A4A4A",
+        black300: "#101828",
         subText: "#27292C",
         grayText: "#475467",
         gray100: "#4F4F4F",

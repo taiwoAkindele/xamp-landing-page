@@ -6,6 +6,7 @@ const LeasePage = React.lazy(() => import("./lease"));
 const AboutUsPage = React.lazy(() => import("./about"));
 const FAQPage = React.lazy(() => import("./faq"));
 const ContactPage = React.lazy(() => import("./contact"));
+const PrivacyPage = React.lazy(() => import("./privacy"));
 
 export {
   LandingPage,
@@ -15,4 +16,5 @@ export {
   AboutUsPage,
   FAQPage,
   ContactPage,
+  PrivacyPage,
 };
