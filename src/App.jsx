@@ -7,6 +7,7 @@ import {
   AboutUsPage,
   FAQPage,
   ContactPage,
+  PrivacyPage,
 } from "./pages";
 import { Suspense } from "react";
 import { Loader } from "./components";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
       </Routes>
     </Suspense>
   );
