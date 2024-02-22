@@ -6,6 +6,7 @@ import {
   LeasePage,
   AboutUsPage,
   FAQPage,
+  ContactPage,
 } from "./pages";
 import { Suspense } from "react";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/properties/lease" element={<LeasePage />} />
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/faq" element={<FAQPage />} />
+        <Route path="/contact-us" element={<ContactPage />} />
       </Routes>
     </Suspense>
   );

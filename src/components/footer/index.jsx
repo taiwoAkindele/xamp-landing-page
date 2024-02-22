@@ -27,7 +27,7 @@ const Footer = () => {
       heading: "Support",
       list: [
         { title: "Help Center", link: "#" },
-        { title: "Contact", link: "#" },
+        { title: "Contact", link: "/contact-us" },
       ],
     },
   ];
